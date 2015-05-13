@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.avast</groupId>
+        <artifactId>avast-oss-parent</artifactId>
+        <version>1.0.6</version>
+    </parent>
+
+    <groupId>com.avast.client</groupId>
+    <artifactId>jmx-client</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>JMX Client</name>
+
+    <description>Sync and async clients to access JMX properties.</description>
+    <url>https://github.com/avast/jmx-publisher/wiki</url>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>jendakol</id>
+            <name>Jan Kolena</name>
+            <email>kolena@avast.com</email>
+        </developer>
+    </developers>
+
+
+    <properties>
+        <gpg.keyname>FF4DDEC0</gpg.keyname>
+
+        <source.encoding>UTF-8</source.encoding>
+        <source.java.version>1.7</source.java.version>
+        <build.java.version>1.7</build.java.version>
+    </properties>
+
+    <scm>
+        <connection>scm:git:git@github.com:avast/jmx-client.git</connection>
+        <developerConnection>scm:git:git@github.com:avast/jmx-client.git</developerConnection>
+        <url>https://github.com/avast/jmx-client</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
